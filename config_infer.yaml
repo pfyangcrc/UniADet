@@ -1,0 +1,62 @@
+# ========== Hardware & Random Seed ==========
+cuda: "5"                  # CUDA_VISIBLE_DEVICES
+seed_value: 42                  # global fixed random seed for reproducibility
+
+# ========== Backbone Configuration (overridden when loading from checkpoint) ==========
+# CLIP parameters
+clip_backbone: "ViT-L/14@336px"
+
+# DINO parameters
+dino_backbone: "/home/pfyang/Project/dinov3-large-p16/"
+
+# model save root directory
+checkpoint_dir: "checkpoints_mvtec"
+
+# ========== Evaluation Configuration ==========
+
+# data loading parameters
+batch_size: 8
+num_workers: 2
+
+# few-shot parameters
+k_shot: [0, 1, 2, 4]
+few_shot_weight: [0.5]
+
+# memory bank sampling configuration
+sample_method: "random_sampling"
+sample_layer: 11
+
+# output cache paths
+memory_bank_dir: "memory/memory_bank"
+csv_path: "results"
+vis_results_dir: "results/vis_results"
+
+# metrics and visualization switches
+metrics: 1
+ratio: 0.01
+vis: 0
+vis_threshold: 0.6
+
+verbose: True 
+
+# ========== Dataset Configuration ==========
+dataset: "visa"
+split: "test"
+categories: ["candle", "capsules", "cashew", "chewinggum", "fryum", "macaroni1", "macaroni2", "pcb1", "pcb2", "pcb3", "pcb4", "pipe_fryum"]
+
+# local root directories of each dataset
+visa_data_root: "/data1/pfyang/VisA/raw"
+visa_split_file: "2cls_fewshot.csv"
+
+mvtec_data_root: "/data1/pfyang/MVTec/raw"
+btad_data_root: "/data1/pfyang/BTAD"
+ksdd_data_root: "/data1/pfyang/KSDD"
+realiad_data_root: "/data1/pfyang/Real-IAD/Real-IAD/Real-IAD"
+
+
+# -------------------------- Full dataset category reference (comment only, not read by the program) --------------------------
+# mvtec: ["bottle", "cable", "capsule", "carpet", "grid", "hazelnut", "leather", "metal_nut", "pill", "screw", "tile", "toothbrush", "transistor", "wood", "zipper"]
+# visa: ["candle", "capsules", "cashew", "chewinggum", "fryum", "macaroni1", "macaroni2", "pcb1", "pcb2", "pcb3", "pcb4", "pipe_fryum"]
+# btad: ["01", "02", "03"]
+# ksdd: ["KSDD"]
+# real-iad: ["audiojack", "bottle_cap", "button_battery", "end_cap", "eraser", "fire_hood", "mint", "mounts", "pcb", "phone_battery", "plastic_nut", "plastic_plug", "porcelain_doll", "regulator", "rolled_strip_base", "sim_card_set", "switch", "tape", "terminalblock", "toothbrush", "toy", "toy_brick", "transistor1", "u_block", "usb", "usb_adaptor", "vcpill", "wooden_beads", "woodstick", "zipper"]

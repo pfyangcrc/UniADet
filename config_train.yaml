@@ -1,0 +1,53 @@
+# ========== Hardware & Random Seed ==========
+cuda: "2"                  # CUDA_VISIBLE_DEVICES
+seed_value: 42             # global fixed random seed for reproducibility
+
+# ========== Backbone Configuration (choose one: CLIP / DINO) ==========
+backbone: "DINO"
+
+# CLIP parameters
+clip_backbone: "ViT-L/14@336px"
+
+# DINO parameters
+dino_backbone: "/home/pfyang/Project/dinov3-large-p16/"
+
+embed_dim: 1024
+feat_layers: [11, 23]
+
+# ---- fusion method: "mean_layer_fusion"(mean) | "softmax_layer_fusion"(learnable) ----
+logits_fusion: "mean_layer_fusion"
+
+# CAA data augmentation configuration
+caa_cache_dir: "/data1/pfyang/CAA_preprocessed"
+aug_prob: 0.5
+grid_sizes: [2, 3]
+
+# ========== Parameter Configuration ==========
+
+# ---- training hyperparameters ----
+batch_size: 8
+num_workers: 2
+
+lr: 0.001
+cos_eta_min: 0.000001
+
+cls_wd: 0.00005
+seg_wd: 0.00005
+
+epochs: 15
+ckpt_save_epoch: 12
+
+checkpoint_dir: "checkpoints"
+
+# ---- dataset ----
+dataset: "mvtec"
+split: "test"
+
+visa_data_root: "/data1/pfyang/VisA/raw"
+visa_split_file: "2cls_fewshot.csv"
+
+mvtec_data_root: "/data1/pfyang/MVTec/raw"
+btad_data_root: "/data1/pfyang/BTAD"
+ksdd_data_root: "/data1/pfyang/KSDD"
+realiad_data_root: "/data1/pfyang/Real-IAD/Real-IAD/Real-IAD"
+
