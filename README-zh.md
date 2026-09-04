@@ -1,4 +1,4 @@
-<p align="center"> <a href="README.md">English</a> | <b>ZH</b></p>
+<p align="center"> <a href="README.md">EN</a> | <b>ZH</b></p>
 
 我的博客：[CSDN](https://blog.csdn.net/qq_44681809/article/details/159471868?spm=1011.2415.3001.5331) | [微信公众号](https://mp.weixin.qq.com/s/djZXenxbLJx7EFj2MO_rZQ) | [知乎](https://zhuanlan.zhihu.com/p/2043442908230055571) | [小红书](https://www.xiaohongshu.com/discovery/item/6a1843780000000035031a00?source=webshare&xhsshare=pc_web&xsec_token=YBseN0uLmI_i6IpPHHc0chcYsWYqWvN6v5fXJNKOmpk0A=&xsec_source=pc_share)
 
