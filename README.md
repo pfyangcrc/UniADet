@@ -1,4 +1,4 @@
-<p align="center"> <b>EN</b> | <a href="README‑zh.md">ZH</a></p>
+<p align="center"> <b>EN</b> | <a href="README-zh.md">ZH</a></p>
 
 # UniADet
 Unofficial PyTorch re-implementation of UniADet.
