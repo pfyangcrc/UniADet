@@ -1,11 +1,16 @@
 <p align="center"> <a href="README.md">EN</a> | <b>ZH</b></p>
 
-我的博客：[CSDN](https://blog.csdn.net/qq_44681809/article/details/159471868?spm=1011.2415.3001.5331) | [微信公众号](https://mp.weixin.qq.com/s/djZXenxbLJx7EFj2MO_rZQ) | [知乎](https://zhuanlan.zhihu.com/p/2043442908230055571) | [小红书](https://www.xiaohongshu.com/discovery/item/6a1843780000000035031a00?source=webshare&xhsshare=pc_web&xsec_token=YBseN0uLmI_i6IpPHHc0chcYsWYqWvN6v5fXJNKOmpk0A=&xsec_source=pc_share)
-
-实验结果可参考我的论文：[arXiv论文名称](arXiv链接)
+<div align="center">
+  <a href="https://blog.csdn.net/qq_44681809/article/details/159471868?spm=1011.2415.3001.5331">CSDN</a> |
+  <a href="https://mp.weixin.qq.com/s/djZXenxbLJx7EFj2MO_rZQ">微信公众号</a> |
+  <a href="https://zhuanlan.zhihu.com/p/2043442908230055571">知乎</a> |
+  <a href="https://www.xiaohongshu.com/discovery/item/6a1843780000000035031a00?source=webshare&xhsshare=pc_web&xsec_token=YBseN0uLmI_i6IpPHHc0chcYsWYqWvN6v5fXJNKOmpk0A=&xsec_source=pc_share">小红书</a>
+</div>
 
 # UniADet
 UniADet 的非官方 pytorch 复现.
+
+实验结果可参考我的论文：[arXiv论文名称](arXiv链接)
 
 ## 项目使用说明
 
